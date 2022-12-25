@@ -13,19 +13,23 @@ class NetworkManager {
     
     func download(url: URL, completion: @escaping (Result<Data, Error>) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
+            if let error = error {  //Error check
                 print(error.localizedDescription)
+                completion(.failure(error))
                 return
             }
             
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { //Urlresponse type and server status code chack.
+                completion(.failure(URLError(.badServerResponse)))
                 return
             }
             
-            guard let data = data else { return }
-
+            guard let data = data else { //Data nil check
+                completion(.failure(URLError(.badURL)))
+                return
+            }
             
-
+            completion(.success(data)) //Service layer data transfer
         }
     }
 }
