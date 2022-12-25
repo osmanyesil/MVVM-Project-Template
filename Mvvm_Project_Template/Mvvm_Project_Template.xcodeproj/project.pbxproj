@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8250E87E2958B04B000E9178 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8250E87D2958B04B000E9178 /* Movie.swift */; };
 		82A777C12951E14C00DA8D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A777C02951E14C00DA8D28 /* AppDelegate.swift */; };
 		82A777C32951E14C00DA8D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A777C22951E14C00DA8D28 /* SceneDelegate.swift */; };
 		82A777CA2951E14E00DA8D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A777C92951E14E00DA8D28 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8250E87D2958B04B000E9178 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		82A777BD2951E14C00DA8D28 /* Mvvm_Project_Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mvvm_Project_Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A777C02951E14C00DA8D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A777C22951E14C00DA8D28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		82A777D82954852600DA8D28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8250E87D2958B04B000E9178 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				82A777C12951E14C00DA8D28 /* AppDelegate.swift in Sources */,
 				82A777C32951E14C00DA8D28 /* SceneDelegate.swift in Sources */,
 				82A777DD295487C100DA8D28 /* HomeViewController.swift in Sources */,
+				8250E87E2958B04B000E9178 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
